@@ -1,0 +1,100 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.boxes-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-top: 40px;
+  width: 90%;
+}
+
+#editor {
+  height: 50vh;
+  width: 100%;
+  border: 1px solid black;
+  padding: 10px;
+  background-color: #2f2f2f;
+  color: white;
+  overflow: auto;
+  resize: none;
+  font-size: 18px;
+  box-sizing: border-box;
+}
+
+.editor-column {
+  width: 100%;
+  box-shadow: 0 2px 10px rgba(255, 255, 255, 0.5);
+  margin-bottom: 15px;
+}
+
+#editor-header{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 68, 255, 0.401);
+  font-family: Russo One;
+  font-size: large;
+  width: 100%;
+  border: 1px solid black;
+  box-sizing: border-box;
+}
+
+#preview {
+  height: 80vh;
+  width: 100%;
+  border: 1px solid black;
+  border-radius: 20px;
+  margin-top: 15px;
+  padding: 10px;
+  background-color: #2f2f2f;
+  color: white;
+  overflow: auto;
+  font-size: 18px;
+}
+
+.review-header{
+  display: flex;
+  align-items: center;
+  padding-right: 10px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: auto;
+}
+
+button{
+  background-color: transparent;
+  border: none;
+  font-size: 20px;
+}
+
+button:hover{
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+@media screen and (min-width: 768px) {
+  .boxes-container {
+    width: 70%;
+    flex-direction: column;
+  }
+
+  #editor {
+    width: 100%;
+    margin-right: 10px;
+  }
+
+  #preview {
+    width: 100%;
+    margin-top: 0;
+  }
+  
+}
